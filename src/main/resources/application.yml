@@ -1,0 +1,14 @@
+server:
+  port: 8081
+
+spring:
+    datasource:
+            username: postgres
+            password: kotlinWebService
+            url: jdbc:postgresql://localhost:5555/postgres
+    jpa:
+        database: POSTGRESQL
+        generate-ddl: true
+        hibernate:
+          ddl-auto: create-drop
+        show-sql: true

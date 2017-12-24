@@ -1,6 +1,8 @@
+version: '2'
 services:
-  image: postgres
-  environment:
-    POSTGRES_PASSWORD: kotlinWebService
-  ports:
-    - 8082:5432
+  db:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: kotlinWebService
+    ports:
+      - 5555:5432
